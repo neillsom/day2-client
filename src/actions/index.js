@@ -1,3 +1,5 @@
+import { API_BASE_URL } from '../config'
+
 const FETCH_STYLES_SUCCESS = 'FETCH_STYLES_SUCCESS'
 const fetchStylesSuccess = (styles) => {
   return {
@@ -9,7 +11,7 @@ const fetchStylesSuccess = (styles) => {
 export const fetchStylesFromApi = () => {
   return (dispatch) => {
 
-    fetch('http://localhost:8080/styles')
+    fetch(`${API_BASE_URL}/styles`)
     .then(response => response.json())
     .then(styles => dispatch(fetchStylesSuccess(styles)))
     .catch(error => console.log(error))

@@ -1,0 +1,16 @@
+.Card {
+  width: 250px;
+  height: 300px;
+  align-items: center;
+  background-color: white;
+  border-radius: 2px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  justify-content: center;
+  margin: 25px;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+}

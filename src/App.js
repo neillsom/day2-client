@@ -1,15 +1,27 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {connect} from 'react-redux'
 import { fetchStylesFromApi } from './actions'
+import Card from './components/card';
+import { Header } from './components/header'
+
 
 class App extends Component {
   render() {
-    console.log(this.props);
     return (
       <div className="App">
-        <button onClick={() => this.props.dispatch(fetchStylesFromApi())}>Get styles from server</button>
+          <button onClick={() => this.props.dispatch(fetchStylesFromApi())}>Get styles from server</button>
+        <Header />
+
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
     );
   }
