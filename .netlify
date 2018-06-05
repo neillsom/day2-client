@@ -1,1 +1,4 @@
-{"site_id":"04dabebb-0077-4703-8f56-673d37ae0315","path":"./build"}
+{"site_id":"04dabebb-0077-4703-8f56-673d37ae0315"}
+
+
+// netlify deploy -p ./build -t e0d1832b6ce5c9ec1a5109c1902bc7a50f4ed28628ad2e3bde24ffb5d451661f -s 04dabebb-0077-4703-8f56-673d37ae0315
