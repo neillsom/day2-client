@@ -8,9 +8,13 @@ class Card extends React.Component {
   render() {
 
     return <div className='Card'>
+      <img src={this.props.style.imgUrl} height='180px'></img>
       <h3>{this.props.style.title}</h3>
-      <input type='checkBox' id='addToFavorites' />
       <label for='addToFavorites'>Add to favorites</label>
+      <input type='checkBox' id='addToFavorites' />
+
+      
+
     </div>
   }
 }
