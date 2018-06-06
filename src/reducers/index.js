@@ -1,9 +1,10 @@
 import { combineReducers } from 'redux'
+import user from './user'
 import styleReducer from './styleReducer'
 
 const rootReducer = combineReducers({
+  user, 
   styleReducer
-  // combine reducers for future reducers as app grows
 })
 
 export default rootReducer

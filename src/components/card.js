@@ -8,7 +8,7 @@ class Card extends React.Component {
   render() {
 
     return <div className='Card'>
-      <img src={this.props.style.imgUrl} height='180px'></img>
+      <img src={this.props.style.imgUrl} height='180px' alt='alt text here'></img>
       <h3>{this.props.style.title}</h3>
       <label for='addToFavorites'>Add to favorites</label>
       <input type='checkBox' id='addToFavorites' onClick={() => {
@@ -16,11 +16,6 @@ class Card extends React.Component {
 
         }
       }/>
-
-      {/*
-      <button onClick={() =>
-        this.props.dispatch(fetchStylesFromApi())}>
-        Get styles from server</button> */}
 
     </div>
   }
