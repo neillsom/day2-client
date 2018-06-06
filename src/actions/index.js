@@ -16,4 +16,7 @@ export const fetchStylesFromApi = () => {
     .then(styles => dispatch(fetchStylesSuccess(styles)))
     .catch(error => console.log(error))
   }
+
+
+
 }

@@ -11,9 +11,16 @@ class Card extends React.Component {
       <img src={this.props.style.imgUrl} height='180px'></img>
       <h3>{this.props.style.title}</h3>
       <label for='addToFavorites'>Add to favorites</label>
-      <input type='checkBox' id='addToFavorites' />
+      <input type='checkBox' id='addToFavorites' onClick={() => {
+        console.log('addToFavorites clicked')
 
-      
+        }
+      }/>
+
+      {/*
+      <button onClick={() =>
+        this.props.dispatch(fetchStylesFromApi())}>
+        Get styles from server</button> */}
 
     </div>
   }
