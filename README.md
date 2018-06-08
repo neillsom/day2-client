@@ -62,9 +62,6 @@ http://sad-wozniak-c0f22c.netlify.com/
 ### Styles (/styles)
 -   GET
     -   Unfiltered results if not logged in
--   PUT
-    -   Requires Authentication
-    -   Gets user and makes changes to user's questions
 
 ### Add to favorites (users/:id/favorites)
 - GET
