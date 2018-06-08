@@ -1,20 +1,18 @@
 import React from 'react'
 import './header.css';
-
+import Login from './login'
+import Signup from './signup'
 
 export class Header extends React.Component {
   render() {
     return(
-      <nav className='Header navbar'>
-        <div className='container'>
-          <div className='navbar-header'>
-            <ul className='nav'>
-              <li><a href=''>Login</a></li>
-              <li><a href=''>Sign up</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+
+      <ul>
+        <li id="h2-header">Day2 Hair</li>
+        <li><Login /></li>
+        <li><Signup /></li>
+
+      </ul>
     )
   }
 }

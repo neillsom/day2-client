@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
 import './App.css';
 import { connect } from 'react-redux'
-import { fetchStylesFromApi, loginUserSuccess, getUserDashboard } from './actions'
+import { fetchStylesFromApi, loginUserSuccess, getUserFavorites } from './actions'
 import Card from './components/card';
 import { Header } from './components/header'
-import Signup from './components/signup'
-import Login from './components/login'
 
 
 class App extends Component {
@@ -21,8 +19,8 @@ class App extends Component {
     // need to update prop in state, use redirect component from router
   }
 
-  getUserDashboard() {
-     this.props.dispatch(getUserDashboard())
+  getUserFavorites() {
+     this.props.dispatch(getUserFavorites())
   }
 
   render() {
@@ -43,10 +41,10 @@ class App extends Component {
 
         <button onClick={() => this.props.dispatch(fetchStylesFromApi())}>Get styles from server</button>
         <Header />
-        <Signup />
-        <Login />
+        {/* <Signup />
+        <Login /> */}
         <button onClick={() => this.handleLogout()}>Logout </button>
-        <button onClick={() => this.getUserDashboard()}>Dashboard </button>
+        <button onClick={() => this.getUserFavorites()}>Favorites</button>
         {styles}
       </div>
     );

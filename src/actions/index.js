@@ -64,10 +64,10 @@ export const loginUser = (username, password) => {
   }
 }
 
-export const getUserDashboard = () => {
+export const getUserFavorites = () => {
   return (dispatch) => {
     const authToken = localStorage.getItem('token')
-    fetch('http://localhost:8080/dashboard', {
+    fetch('http://localhost:8080/favorites', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

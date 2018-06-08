@@ -9,8 +9,8 @@ class Card extends React.Component {
 
     return <div className='Card'>
       <img src={this.props.style.imgUrl} height='180px' alt='alt text here'></img>
-      <h3>{this.props.style.title}</h3>
-      <label for='addToFavorites'>Add to favorites</label>
+      <h4>{this.props.style.title}</h4>
+      <label htmlFor='addToFavorites'>Add to favorites</label>
       <input type='checkBox' id='addToFavorites' onClick={() => {
         console.log('addToFavorites clicked')
 
