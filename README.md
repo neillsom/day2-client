@@ -8,8 +8,9 @@ The project was created for my wife who often goes a day or two between hair was
 http://sad-wozniak-c0f22c.netlify.com/
 
 ## Screenshots
-![Day2 Landing Page](https://lh4.googleusercontent.com/c3rxI6BYEaM4HKFYEGwQOhwvomVE8NICXr3mnTkzrPmwdKMA4ZOvnBHRJAwMDmgVHx15zDwJVt-e4RR5ZheB=w960-h956-rw)
-![User signed-in page](https://lh4.googleusercontent.com/itpevP1yLXTCHPcd4Lxa6KLeN7WiLMDLbRVZtcbW0Wl8PHkmgAD2_B2fM_OONpEoDk5alS9Jgq8_wLl3x2jn=w960-h956-rw)
+![Day2 Landing Page](https://c2.staticflickr.com/2/1734/28804601858_f14d2bb842_o.jpg)
+![User signed-in page](https://c2.staticflickr.com/2/1743/27809183957_eb6c476059_o.jpg)
+
 ## Tech Used
 
 ### Front-End
@@ -66,7 +67,7 @@ http://sad-wozniak-c0f22c.netlify.com/
     -   Requires Authentication
     -   Gets user and makes changes to user's questions
     -   Uses algorithm to determine where in the list the question should be inserted
-    -
+
 ## Code Examples
 
 ### Users Schema with authentication
