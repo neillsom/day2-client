@@ -53,20 +53,24 @@ http://sad-wozniak-c0f22c.netlify.com/
 ## Resources
 ### Users (/users)
 -   GET
-    -   Get user info
+    -   Get user favorites
 -   POST
     -   Register new user
-### Auth (/login)
+### Auth (users/login)
 -   POST
     -   Login existing user and returns an authToken
-### List of styles (/styles)
+### Styles (/styles)
 -   GET
-    -   Requires Authentication
-    -   Gets a specific user's first question from the list
+    -   Unfiltered results if not logged in
 -   PUT
     -   Requires Authentication
     -   Gets user and makes changes to user's questions
-    -   Uses algorithm to determine where in the list the question should be inserted
+
+### Add to favorites (users/:id/favorites)
+- GET
+  - Filtered favorites returned
+- PUT
+  - Pushes style ID to user favorites list
 
 ## Code Examples
 
